@@ -1,11 +1,8 @@
-﻿using System.ComponentModel.DataAnnotations.Schema;
-using System.ComponentModel.DataAnnotations;
-using GeekShopping.ProductAPI.Model.Base;
-
-namespace GeekShopping.ProductAPI.Model.Data.DTOs
+﻿namespace GeekShopping.Web.Models
 {
-    public class ProductDTO : BaseEntity
+    public class ProductModel
     {
+        public Guid Id { get; set; }
         public string Name { get; set; }
         public decimal Price { get; set; }
         public string Description { get; set; }
